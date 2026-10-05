@@ -1,0 +1,21 @@
+# Required for CSI acquisition on ESP32-S3.
+# idf.py build merges this file into sdkconfig automatically, so no
+# manual `idf.py menuconfig` step is required.
+CONFIG_ESP_WIFI_CSI_ENABLED=y
+
+# We deliberately do not use NVS for WiFi credential storage anywhere
+# in this project (see wifi.c: esp_wifi_set_storage(WIFI_STORAGE_RAM)),
+# so the NVS partition is not required for correct operation.
+
+# USB-Serial-JTAG console is used on most ESP32-S3 dev boards; if your
+# board instead exposes a UART-to-USB bridge chip, this default still
+# works because idf.py monitor / the Python collector talk to whatever
+# serial device enumerates on the host.
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
+CONFIG_ESP_CONSOLE_UART=y
+CONFIG_ESP_CONSOLE_UART_NUM=0
+
+# Slightly larger main task stack: CSI record formatting uses a
+# moderately sized on-stack line buffer in the forwarding task, not in
+# app_main, but this gives head-room for logging during init.
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=4096

@@ -1,0 +1,5 @@
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+"-specs=/home/abdo/Projects/esp/esp32-csi-project/build/specs/picolibc.specs"

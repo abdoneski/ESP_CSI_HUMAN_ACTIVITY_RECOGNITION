@@ -1,0 +1,17 @@
+{
+  "idf.currentSetup": "/home/abdo/.espressif/v6.0.2/esp-idf",
+  "idf.flashType": "UART",
+  "idf.port": "/dev/ttyACM0",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "clangd.path": "/home/abdo/.espressif/tools/esp-clang/esp-20.1.1_20250829/esp-clang/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=/home/abdo/Projects/esp/esp32-csi-project/build"
+  ]
+}

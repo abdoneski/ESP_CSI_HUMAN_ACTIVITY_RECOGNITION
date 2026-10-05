@@ -1,0 +1,124 @@
+Command: /home/abdo/.espressif/tools/python/v6.0.2/venv/bin/python /home/abdo/.espressif/v6.0.2/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/abdo/Projects/esp/esp32-csi-project/build/esp32_csi_project.elf /home/abdo/Projects/esp/esp32-csi-project/build/bootloader/bootloader.elf -m '/home/abdo/.espressif/tools/python/v6.0.2/venv/bin/python' '/home/abdo/.espressif/v6.0.2/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+16,1,-17,1,-17,0,-16,0,-15,0,-13,0,-10,0,-7,0,-4,-1,-1,-2,2,-3,64,-39
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Sep  6 2026 17:23:01[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1aba0h (109472) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0002abc8 vaddr=3fc97800 size=05050h ( 20560) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0002fc20 vaddr=40374000 size=003f8h (  1016) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=86f14h (552724) map[0m
+[0;32mI (219) esp_image: segment 4: paddr=000b6f3c vaddr=403743f8 size=133d8h ( 78808) load[0m
+[0;32mI (237) esp_image: segment 5: paddr=000ca31c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (246) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (246) boot: Disabling RNG early entropy source...[0m
+[0;32mI (256) cpu_start: Multicore app[0m
+[0;32mI (264) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (265) cpu_start: Pro cpu start user code[0m
+[0;32mI (265) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (267) app_init: Application information:[0m
+[0;32mI (270) app_init: Project name:     esp32_csi_project[0m
+[0;32mI (275) app_init: App version:      1[0m
+[0;32mI (279) app_init: Compile time:     Sep  6 2026 17:22:46[0m
+[0;32mI (284) app_init: ELF file SHA256:  469f3ba9c...[0m
+[0;32mI (288) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (292) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (296) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (300) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (303) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (310) heap_init: At 3FCA0F70 len 000487A0 (289 KiB): RAM[0m
+[0;32mI (315) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (320) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: boya[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (337) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (350) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (356) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (363) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) app_main: ESP32-S3 WiFi CSI data collection -- starting[0m
+[0;32mI (393) pp: pp rom version: e7ae62f[0m
+[0;32mI (393) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (403) wifi:wifi driver task: 3fceeaa0, prio:23, stack:6656, core=0[0m
+[0;32mI (403) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (403) wifi:wifi certification version: v7.0[0m
+[0;32mI (403) wifi:config NVS flash: enabled[0m
+[0;32mI (403) wifi:config nano formatting: disabled[0m
+[0;32mI (413) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (413) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (413) wifi:Init management short buffer num: 32[0m
+[0;32mI (423) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (423) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (433) wifi:Init static rx buffer size: 2212[0m
+[0;32mI (433) wifi:Init static rx buffer num: 10[0m
+[0;32mI (443) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (443) wifi_init: rx ba win: 6[0m
+[0;32mI (443) wifi_init: accept mbox: 6[0m
+[0;32mI (443) wifi_init: tcpip mbox: 32[0m
+[0;32mI (453) wifi_init: udp mbox: 6[0m
+[0;32mI (453) wifi_init: tcp mbox: 6[0m
+[0;32mI (453) wifi_init: tcp tx win: 5760[0m
+[0;32mI (463) wifi_init: tcp rx win: 5760[0m
+[0;32mI (463) wifi_init: tcp mss: 1440[0m
+[0;32mI (463) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (473) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (473) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (533) wifi:mode : sta (7c:4f:ad:b6:26:a8)[0m
+[0;32mI (533) wifi:enable tsf[0m
+[0;32mI (533) app_main: Waiting for WiFi connection to "IdoomFibre_ATT8usMMY"...[0m
+[0;32mI (533) wifi: WiFi started, connecting to SSID "IdoomFibre_ATT8usMMY"...[0m
+[0;32mI (1703) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1703) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2703) wifi:state: auth -> init (0x200)[0m
+[0;33mW (2703) wifi: Disconnected from AP (reason=2)[0m
+[0;32mI (2703) wifi: Reconnect attempt 1/10[0m
+[0;32mI (5013) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6013) wifi:state: auth -> init (0x200)[0m
+[0;33mW (6013) wifi: Disconnected from AP (reason=2)[0m
+[0;32mI (6013) wifi: Reconnect attempt 2/10[0m
+[0;32mI (8313) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8333) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8343) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8743) wifi:connected with IdoomFibre_ATT8usMMY, aid = 4, channel 10, BW20, bssid = ca:84:cf:b8:d8:84[0m
+[0;32mI (8743) wifi:security: WPA2-PSK, phy: bgn, rssi: -59, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (8753) wifi:pm start, type: 1[0m
+
+[0;32mI (8753) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8763) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (8933) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (11963) esp_netif_handlers: sta ip: 192.168.100.204, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (11963) wifi: Got IP: 192.168.100.204[0m
+[0;32mI (11963) app_main: WiFi connected[0m
+[0;32mI (11963) csi: CSI acquisition enabled[0m
+READY
+[0;32mI (11963) app_main: System ready -- streaming CSI over serial[0m
+[0;32mI (11973) main_task: Returned from app_main()[0m
+CSI,27350062,256,0,0,-8,12,-7,9,-5,5,-3,2,-1,-1,2,-5,3,-8,5,-11,6,-14,7,-16,7,-18,8,-19,8,-19,7,-18,6,-17,5,-15,4,-12,3,-9,2,-6,0,-1,-2,2,-3,6,-5,9,-7,11,-8,13,-9,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,4,0,1,1,-1,2,-4,4,-6,5,-8,7,-10,8,-11,9,-12,9,-12,9,-12,8,-11,7,-9,6,-8,4,-6,2,-3,0,-1,-2,2,-4,5,-6,8,-7,10,-9,13,-9,15,-10,15,-11,15,-10,15,0,0,-18,24,-12,18,-9,11,-6,5,0,-2,4,-10,8,-16,11,-23,14,-28,14,-33,15,-37,16,-38,16,-39,15,-37,14,-34,12,-30,9,-24,6,-18,4,-10,0,-3,-4,5,-7,12,-11,18,-14,24,-16,27,-18,30,-22,33,-23,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,12,-2,8,0,2,3,-3,5,-8,7,-13,10,-17,13,-20,15,-23,17,-25,18,-25,17,-24,16,-23,14,-20,11,-16,8,-11,4,-7,0,-1,-3,5,-7,10,-11,17,-14,21,-16,26,-18,31,-19,32,-20,33,-19,32
+CSI,27352827,128,0,0,8,-12,6,-9,4,-6,2,-3,0,0,-3,4,-5,7,-6,10,-8,12,-8,14,-9,16,-10,16,-9,17,-9,16,-8,15,-7,13,-6,10,-4,8,-3,4,0,1,1,-3,3,-6,4,-9,6,-11,8,-13,8,-14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-4,-1,-2,-2,0,-3,3,-5,5,-6,7,-7,8,-9,9,-10,10,-10,10,-10,9,-9,9,-8,8,-7,6,-5,4,-3,2,-1,0,1,-3,3,-5,5,-8,6,-10,8,-13,9,-14,10,-15,10,-15,10,-15
+CSI,27352998,128,0,0,13,5,10,4,6,2,3,1,-1,-1,-5,-2,-9,-3,-12,-4,-15,-5,-17,-6,-18,-6,-20,-6,-20,-6,-19,-6,-17,-6,-15,-5,-12,-4,-9,-3,-5,-2,-1,-1,2,1,6,3,8,4,11,5,13,6,14,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,-1,1,-1,-2,-1,-5,-2,-7,-3,-9,-3,-11,-4,-13,-4,-14,-5,-14,-5,-14,-5,-13,-5,-11,-5,-9,-4,-7,-3,-4,-2,-1,-1,2,0,5,1,9,2,11,3,14,4,16,5,17,5,18,6,17,5
+CSI,27389430,128,0,0,8,12,6,9,3,6,1,3,-1,-1,-4,-5,-6,-8,-8,-11,-10,-13,-12,-15,-13,-16,-14,-17,-14,-17,-14,-16,-12,-15,-11,-13,-9,-11,-6,-8,-4,-4,-1,-1,1,2,3,5,5,8,7,11,8,13,9,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,2,1,0,-1,-2,-3,-5,-4,-7,-6,-9,-7,-11,-8,-12,-8,-13,-8,-14,-8,-14,-7,-13,-7,-11,-5,-9,-4,-7,-2,-4,-1,-1,1,2,4,5,5,8,7,10,8,13,9,14,10,16,11,16,10,16
+[0;32mI (28603) wifi:<ba-add>idx:0 (ifx:0, ca:84:cf:b8:d8:84), tid:0, ssn:1, winSize:64[0m
+CSI,28272712,256,0,0,-8,13,-6,10,-5,6,-4,3,-2,-2,-1,-6,0,-10,1,-13,1,-17,1,-19,1,-21,0,-22,0,-22,0,-21,0,-20,0,-17,0,-14,0,-10,1,-6,1,-1,1,3,2,7,2,11,2,14,2,17,2,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-2,4,-1,2,1,0,3,-2,5,-4,7,-6,9,-8,10,-9,11,-10,11,-10,11,-10,10,-10,9,-9,7,-7,5,-6,3,-3,0,-1,-2,2,-4,5,-5,8,-7,10,-8,13,-9,15,-10,16,-9,17,-9,16,0,0,-13,27,-12,21,-6,16,-8,4,-3,-1,-2,-12,-4,-20,1,-24,4,-31,2,-36,0,-40,-1,-41,0,-44,-2,-43,-2,-41,-1,-35,1,-28,0,-20,0,-12,3,-4,4,5,4,16,4,22,3,27,6,32,4,36,7,38,4,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-5,12,-7,10,-7,7,-3,4,3,2,7,-2,9,-9,14,-12,15,-16,19,-16,21,-21,22,-23,21,-22,17,-19,15,-18,13,-18,10,-14,3,-5,3,-1,-2,4,-6,14,-10,18,-11,22,-14,27,-20,32,-18,36,-17,33,-15,34
+CSI,287242429,256,0,0,0,-16,1,-13,1,-10,1,-6,2,-2,2,2,3,5,6,8,7,11,9,12,10,14,11,14,12,14,13,13,13,13,12,11,11,9,9,6,7,4,4,2,1,0,-2,-2,-5,-4,-8,-5,-10,-6,-12,-7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,-1,0,1,-3,3,-5,4,-7,6,-9,8,-11,9,-12,10,-13,10,-13,10,-12,10,-12,9,-11,7,-9,6,-7,4,-5,2,-4,-1,-2,-4,-1,-8,0,-10,1,-14,1,-16,1,-18,1,-20,1,-20,1,-19,0,0,2,-32,3,-25,2,-18,2,-12,4,-4,5,4,8,12,11,17,14,24,18,26,21,29,23,29,26,30,27,28,26,26,24,22,22,18,18,13,14,10,8,5,2,0,-4,-4,-10,-7,-16,-10,-20,-11,-24,-13,-29,-16,-30,-16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,-7,9,-5,4,-1,0,3,-5,6,-9,9,-14,13,-17,16,-21,18,-23,20,-26,20,-25,21,-25,21,-23,19,-20,16,-17,13,-14,9,-10,3,-8,-2,-3,-8,-1,-15,0,-21,1,-27,3,-32,3,-36,2,-39,2,-40,2,-39
+CSI,289084511,128,0,0,10,-12,7,-10,5,-7,3,-4,1,-1,0,3,-2,7,-2,11,-3,13,-3,16,-2,18,-2,19,-1,20,0,19,0,18,1,17,2,14,1,11,1,8,1,4,0,0,0,-4,-1,-6,-2,-9,-3,-12,-3,-14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,-1,1,-3,2,-6,2,-9,3,-11,3,-13,4,-15,4,-16,4,-16,4,-15,3,-15,3,-13,2,-11,1,-8,0,-6,-1,-2,-3,0,-5,3,-7,5,-9,8,-11,10,-13,11,-14,11,-16,12,-16,11,-16

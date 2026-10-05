@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/abdo/Projects/esp/esp32-csi-project/build/CMakeFiles/bootloader
+/home/abdo/Projects/esp/esp32-csi-project/build/CMakeFiles/bootloader.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/CMakeFiles/bootloader-complete.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

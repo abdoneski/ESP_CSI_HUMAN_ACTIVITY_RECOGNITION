@@ -1,0 +1,2 @@
+source /home/abdo/Projects/esp/esp32-csi-project/build/bootloader/gdbinit/symbols
+source /home/abdo/Projects/esp/esp32-csi-project/build/bootloader/gdbinit/connect

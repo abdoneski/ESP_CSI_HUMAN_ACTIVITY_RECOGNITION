@@ -1,0 +1,6 @@
+"-specs=/home/abdo/Projects/esp/esp32-csi-project/build/bootloader/specs/picolibc.specs"
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+-fno-rtti
