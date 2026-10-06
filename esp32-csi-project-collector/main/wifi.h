@@ -5,12 +5,12 @@
 #include "esp_err.h"
 
 /* -------------------------------------------------------------------- */
-/* WiFi credentials for the Realme 10 Pro+ hotspot.                     */
+/* WiFi credentials for the Phone or router's hotspot.                     */
 /* Edit these two values directly. No NVS / persistent storage is used  */
 /* anywhere in this project.                                            */
 /* -------------------------------------------------------------------- */
-#define WIFI_SSID       "IdoomFibre_ATT8usMMY"
-#define WIFI_PASSWORD   "4UxnzYR2"
+#define WIFI_SSID       "WIFI_NAME"
+#define WIFI_PASSWORD   "WIFI_PASSWORD"
 
 /* Maximum number of connection retries before giving up and reporting
  * a hard failure. */
