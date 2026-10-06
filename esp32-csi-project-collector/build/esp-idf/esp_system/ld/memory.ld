@@ -12,7 +12,7 @@
  */
 /*
  * Automatically generated file. DO NOT EDIT.
- * Espressif IoT Development Framework (ESP-IDF) 6.0.2 Configuration Header
+ * Espressif IoT Development Framework (ESP-IDF) 6.1.0 Configuration Header
  */
        
 /* List of deprecated options */
@@ -22,7 +22,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 /* CPU instruction prefetch padding size for flash mmap scenario */
-/* Copy from esp_secure_boot.h */
 /*
  * PMP region granularity size
  * Software may determine the PMP granularity by writing zero to pmp0cfg, then writing all ones
@@ -32,6 +31,16 @@
 /* CPU instruction prefetch padding size for memory protection scenario */
 /* Memory alignment size for PMS */
     /* rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files). For rtc_timer_data_in_rtc_mem section. */
+/*
+ * APP_BUILD_MINIMIZE_BINARY_CHANGES_PADDING
+ *
+ * Aligns the current location (.) to CONFIG_APP_BUILD_MINIMIZE_BINARY_CHANGES_PADDING.
+ * If more than half of the alignment block is already consumed,
+ * extra padding is applied to skip to the next boundary.
+ * For example, if the current location (.) is 0x1900 and the padding is 4 KB,
+ * the location will be moved to 0x3000 instead of 0x2000 because less than
+ * half of the current 4 KB block remains (0x2000 - 0x1900 < 2 KB).
+ */
 /*
  * 40370000 <- IRAM/Icache -> 40378000 <- D/IRAM (I) -> 403E0000
  *                            3FC88000 <- D/IRAM (D) -> 3FCF0000 <- DRAM/DCache -> 3FD00000
@@ -126,7 +135,7 @@ MEMORY
   /**
    * RTC fast memory (executable). Persists over deep sleep.
    */
-  rtc_iram_seg(RWX) : org = 0x600fe000, len = 0x2000 - (0 + (24))
+  rtc_iram_seg(RWX) : org = 0x600fe000, len = 0x2000 - (0 + (24) + 0)
   /* We reduced the size of rtc_iram_seg by RESERVE_RTC_MEM value.
      It reserves the amount of RTC fast memory that we use for this memory segment.
      This segment is intended for keeping:
@@ -134,7 +143,7 @@ MEMORY
        - (higher addr) bootloader rtc data (s_bootloader_retain_mem, when a Kconfig option is on).
      The aim of this is to keep data that will not be moved around and have a fixed address.
   */
-  rtc_reserved_seg(RW) : org = 0x600fe000 + 0x2000 - (0 + (24)), len = (0 + (24))
+  rtc_reserved_seg(RW) : org = 0x600fe000 + 0x2000 - (0 + (24) + 0), len = (0 + (24) + 0)
   /**
    * RTC slow memory (data accessible). Persists over deep sleep.
    * Start of RTC slow memory is reserved for ULP co-processor code + data, if enabled.

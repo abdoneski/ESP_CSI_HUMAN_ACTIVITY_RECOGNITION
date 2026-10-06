@@ -1,5 +1,5 @@
 {
-  "idf.currentSetup": "/home/abdo/.espressif/v6.0.2/esp-idf",
+  "idf.currentSetup": "/home/abderrahmen/.espressif/v6.1/esp-idf",
   "idf.flashType": "UART",
   "idf.port": "/dev/ttyACM0",
   "idf.openOcdConfigs": [
@@ -13,5 +13,6 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=/home/abdo/Projects/esp/esp32-csi-project/build"
-  ]
+  ],
+  "git.ignoreLimitWarning": true
 }

@@ -1,4 +1,4 @@
-# Install script for directory: /home/abdo/.espressif/v6.0.2/esp-idf/components/bootloader/subproject
+# Install script for directory: /home/abderrahmen/.espressif/v6.1/esp-idf/components/bootloader/subproject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,18 +34,18 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/abdo/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/abderrahmen/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/abdo/Projects/esp/esp32-csi-project/build/bootloader/esp-idf/cmake_install.cmake")
+  include("/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader/esp-idf/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader/install_local_manifest.txt"
+  file(WRITE "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

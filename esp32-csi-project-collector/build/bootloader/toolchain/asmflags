@@ -1,4 +1,4 @@
-"-specs=/home/abdo/Projects/esp/esp32-csi-project/build/bootloader/specs/picolibc.specs"
+"-specs=/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader/specs/picolibc.specs"
 -mlongcalls
 -fno-builtin-memcpy
 -fno-builtin-memset

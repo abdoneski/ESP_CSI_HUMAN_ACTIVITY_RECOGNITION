@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/home/abdo/.espressif/v6.0.2/esp-idf/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "/home/abdo/.espressif/v6.0.2/esp-idf/components/bootloader/subproject")
+if(NOT EXISTS "/home/abderrahmen/.espressif/v6.1/esp-idf/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "/home/abderrahmen/.espressif/v6.1/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader"
-  "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix"
-  "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/tmp"
-  "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src"
-  "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader"
+  "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader-prefix"
+  "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader-prefix/tmp"
+  "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader-prefix/src"
+  "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/abdo/Projects/esp/esp32-csi-project/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/abderrahmen/Projects/esp/esp32-csi-project-collector/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
